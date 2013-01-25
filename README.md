@@ -23,6 +23,10 @@ colors on the screen.
 This work-in-progress is licensed under the WTFPL, which you can find in the
 LICENSE file.
 
+Whether or not this license is the best one to use is completely beyond me. I
+have obviously usesd colors from Ethan Schoovener in my `solarized` script.  So,
+thanks, Ethan!
+
 ---
 
 [1]: It munges the "Default" theme, which is hardcoded. If you know a way around
