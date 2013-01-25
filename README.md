@@ -13,6 +13,17 @@ Install this with Vundle or Pathogen or by copying colors/ into ~/.vim, and then
 * Note: Probably a bad example as I'm probably gonna nix Special (which is
   purple in that image)
 
+Oh yeah, this might also help:
+
+```vim
+if isdirectory($HOME."/.vim/bundle/vim-colors-lunatic")
+    colorscheme lunatic
+else
+    echomsg "Skipping colorscheme cause it's no-findings."
+    colorscheme default
+endif
+```
+
 ### What the Dingles?
 
 <!-- Comments are cool. -->
