@@ -1,8 +1,11 @@
 # The Lunatic Colorscheme
 
-// Insert screen shot
+***Don't like Solarized? Then you should probably just move along. No hard
+feelings.***
 
-***Don't like Solarized? Then you should probably just move along***
+Install this with Vundle or Pathogen or by copying colors/ into ~/.vim, and then:
+
+// Insert screen shot
 
 ### What the Dingles?
 
