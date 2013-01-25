@@ -149,8 +149,7 @@ hi link Structure NONE
 " Typedef       A typedef
 
 " *Special      any special symbol
-hi Special ctermfg=5
-hi link Delimiter NONE
+hi clear Special
 " SpecialChar   special character in a constant
 " Tag           you can use CTRL-] on this
 " Delimiter     character that needs attention
