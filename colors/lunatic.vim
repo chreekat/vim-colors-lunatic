@@ -49,10 +49,10 @@ hi Directory ctermfg=4
 " DiffChange
 " DiffDelete
 " DiffText
-hi DiffAdd        cterm=bold   ctermfg=2 ctermbg=0
-hi DiffChange     cterm=bold   ctermfg=3 ctermbg=0
-hi DiffDelete     cterm=bold   ctermfg=1 ctermbg=0
-hi DiffText       cterm=bold   ctermfg=6 ctermbg=0
+hi DiffAdd        cterm=none   ctermfg=2 ctermbg=0
+hi DiffChange     cterm=none   ctermfg=3 ctermbg=0
+hi DiffDelete     cterm=none   ctermfg=1 ctermbg=0
+hi DiffText       cterm=none   ctermfg=2 ctermbg=0
 " ErrorMsg
 hi ErrorMsg cterm=reverse ctermfg=1 ctermbg=none
 " VertSplit
