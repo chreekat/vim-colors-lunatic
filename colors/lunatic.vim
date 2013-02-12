@@ -174,7 +174,6 @@ hi! link Operator NONE
 hi Visual       cterm=underline              ctermbg=0
 hi Todo         cterm=bold ctermfg=5 ctermbg=none
 hi! link Number NONE
-hi NonText cterm=bold ctermfg=11
 " Black                     0               0
 " DarkBlue                  1              16
 " DarkGreen                 2              32
