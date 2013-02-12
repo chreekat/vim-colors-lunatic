@@ -104,7 +104,7 @@ hi SpecialKey cterm=bold ctermfg=11 ctermbg=0
 hi Title          cterm=bold   ctermfg=9 ctermbg=none
 " Visual
 " VisualNOS
-" WarningMsg
+hi WarningMsg   cterm=bold   ctermfg=1
 " WildMenu
 
 " These are the the things set by syncolor.vim when you set 'bg'
