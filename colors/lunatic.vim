@@ -74,7 +74,7 @@ hi ModeMsg cterm=none ctermfg=4
 " MoreMsg
 hi MoreMsg ctermfg=4
 " NonText
-hi NonText cterm=bold ctermfg=11 ctermbg=none
+hi NonText cterm=reverse ctermfg=11 ctermbg=none
 " Normal
 hi Normal       ctermfg=12
 " Pmenu
