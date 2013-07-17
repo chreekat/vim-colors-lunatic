@@ -12,22 +12,22 @@ set bg=dark
 hi clear
 let g:colors_name = expand('<sfile>:t:r')
 
-let s:base03      = "8"
 let s:base02      = "0"
+let s:red         = "1"
+let s:green       = "2"
+let s:yellow      = "3"
+let s:blue        = "4"
+let s:magenta     = "5"
+let s:cyan        = "6"
+let s:base2       = "7"
+let s:base03      = "8"
+let s:orange      = "9"
 let s:base01      = "10"
 let s:base00      = "11"
 let s:base0       = "12"
-let s:base1       = "14"
-let s:base2       = "7"
-let s:base3       = "15"
-let s:yellow      = "3"
-let s:orange      = "9"
-let s:red         = "1"
-let s:magenta     = "5"
 let s:violet      = "13"
-let s:blue        = "4"
-let s:cyan        = "6"
-let s:green       = "2"
+let s:base1       = "14"
+let s:base3       = "15"
 
 " These are the standard non-syntax items. These we steal from Solarized,
 " mostly.
@@ -56,9 +56,9 @@ hi DiffText       cterm=none   ctermfg=2 ctermbg=0
 " ErrorMsg
 hi ErrorMsg cterm=reverse ctermfg=1 ctermbg=none
 " VertSplit
-hi VertSplit ctermfg=11
+hi VertSplit cterm=none ctermbg=0
 " Folded
-hi Folded cterm=underline ctermfg=11 ctermbg=8
+hi Folded cterm=underline ctermfg=11 ctermbg=0
 " FoldColumn
 hi FoldColumn ctermfg=12 ctermbg=0
 " SignColumn
@@ -70,11 +70,11 @@ hi LineNr ctermfg=10 ctermbg=0
 " MatchParen
 hi MatchParen cterm=bold ctermfg=1 ctermbg=10
 " ModeMsg
-hi ModeMsg cterm=none ctermfg=4
+hi ModeMsg cterm=none ctermbg=1 ctermfg=8
 " MoreMsg
 hi MoreMsg ctermfg=4
 " NonText
-hi NonText cterm=reverse ctermfg=11 ctermbg=none
+hi NonText cterm=none ctermbg=0 ctermfg=3
 " Normal
 hi Normal       ctermfg=12
 " Pmenu
@@ -90,16 +90,21 @@ hi Question cterm=bold ctermfg=6
 " Search
 hi Search ctermbg=3 ctermfg=0
 " SpecialKey
-hi SpecialKey cterm=bold ctermfg=11 ctermbg=0
+hi SpecialKey ctermfg=2
 " SpellBad
 " SpellCap
 " SpellLocal
 " SpellRare
 " StatusLine
+hi StatusLine cterm=bold ctermbg=0
 " StatusLineNC
+hi StatusLineNC cterm=none ctermbg=0 ctermfg=10
 " TabLine
+hi TabLine cterm=none ctermfg=12 ctermbg=0
 " TabLineFill
+hi TabLineFill cterm=none ctermbg=0
 " TabLineSel
+hi TabLineSel cterm=bold ctermfg=13 ctermbg=0
 " Title
 hi Title          cterm=bold   ctermfg=9 ctermbg=none
 " Visual
@@ -109,10 +114,10 @@ hi WarningMsg   cterm=bold   ctermfg=1
 
 " These are the the things set by syncolor.vim when you set 'bg'
 " *Comment      any comment
-hi Comment      term=none cterm=none         ctermfg=10 ctermbg=0
+hi Comment      term=none cterm=none         ctermfg=10
 
 " *Constant     any constant
-hi Constant     ctermfg=6
+hi Constant     ctermfg=9
 " String                a string constant: "this is a string"
 " Character     a character constant: 'c', '\n'
 " Number                a number constant: 234, 0xff
@@ -136,7 +141,7 @@ hi clear Statement
 " *PreProc      generic Preprocessor
 hi clear PreProc
 " Include       preprocessor #include
-hi Include ctermfg=9
+hi Include ctermfg=6
 " Define                preprocessor #define
 " Macro         same as Define
 " PreCondit     preprocessor #if, #else, #endif, etc.
@@ -149,7 +154,7 @@ hi link Structure NONE
 " Typedef       A typedef
 
 " *Special      any special symbol
-hi clear Special
+hi Special ctermfg=2
 " SpecialChar   special character in a constant
 " Tag           you can use CTRL-] on this
 " Delimiter     character that needs attention
@@ -214,3 +219,9 @@ hi! link Number NONE
 "   SynColor Underlined  cterm=underline ctermfg=DarkMagenta  
 "   SynColor Ignore      cterm=NONE ctermfg=white ctermbg=NONE   
 " endif
+
+" Somebody done fucked up diffs.
+hi link diffAdded DiffAdd
+hi link diffRemoved DiffDelete
+hi link diffLine Comment
+hi diffFile cterm=bold ctermfg=13
