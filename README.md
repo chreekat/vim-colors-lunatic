@@ -7,22 +7,9 @@ feelings.***
 
 Install this with Vundle or Pathogen or by copying colors/ into ~/.vim, and then:
 
-![C++ screen shot](http://i.imgur.com/3gQdXzw.png)
-
-* Note: Not my code
-* Note: Probably a bad example as I'm probably gonna nix Special (which is
-  purple in that image)
+![C++ screen shot](http://i.imgur.com/WiqJMEm.png)
 
 Oh yeah, this might also help:
-
-```vim
-if isdirectory($HOME."/.vim/bundle/vim-colors-lunatic")
-    colorscheme lunatic
-else
-    echomsg "Skipping colorscheme cause it's no-findings."
-    colorscheme default
-endif
-```
 
 ### What the Dingles?
 
@@ -69,7 +56,3 @@ LICENSE file.
 Whether or not this license is the best one to use is completely beyond me. I
 have obviously used colors from Ethan Schoovener in my `solarized` script.  So,
 thanks, Ethan!
-
-### Freebie light-mode screenshot
-
-![Some markdown](http://i.imgur.com/3ZfEYT2.png)
