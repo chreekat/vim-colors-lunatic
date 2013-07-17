@@ -9,8 +9,6 @@ Install this with Vundle or Pathogen or by copying colors/ into ~/.vim, and then
 
 ![C++ screen shot](http://i.imgur.com/WiqJMEm.png)
 
-Oh yeah, this might also help:
-
 ### What the Dingles?
 
 <!-- Comments are cool. -->
