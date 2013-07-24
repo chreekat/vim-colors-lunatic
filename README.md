@@ -54,3 +54,7 @@ LICENSE file.
 Whether or not this license is the best one to use is completely beyond me. I
 have obviously used colors from Ethan Schoovener in my `solarized` script.  So,
 thanks, Ethan!
+
+## See also
+
+[Lunatic for mutt!](https://github.com/chreekat/lunatic-mutt)
