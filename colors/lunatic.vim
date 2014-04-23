@@ -74,7 +74,7 @@ hi ModeMsg cterm=none ctermbg=1 ctermfg=8
 " MoreMsg
 hi MoreMsg ctermfg=4
 " NonText
-hi NonText cterm=none ctermbg=0 ctermfg=3
+hi NonText cterm=none ctermfg=3
 " Normal
 hi Normal       ctermfg=12
 " Pmenu
@@ -114,10 +114,10 @@ hi WarningMsg   cterm=bold   ctermfg=1
 
 " These are the the things set by syncolor.vim when you set 'bg'
 " *Comment      any comment
-hi Comment      term=none cterm=none         ctermfg=10
+hi Comment      term=none cterm=none ctermfg=13 ctermbg=8
 
 " *Constant     any constant
-hi Constant     ctermfg=9
+hi Constant     ctermfg=10
 " String                a string constant: "this is a string"
 " Character     a character constant: 'c', '\n'
 " Number                a number constant: 234, 0xff
@@ -135,6 +135,7 @@ hi clear Statement
 " Repeat                for, do, while, etc.
 " Label         case, default, etc.
 " Operator      "sizeof", "+", "*", etc.
+"hi Operator ctermfg=3
 " Keyword       any other keyword
 " Exception     try, catch, throw
 
@@ -154,7 +155,7 @@ hi link Structure NONE
 " Typedef       A typedef
 
 " *Special      any special symbol
-hi clear Special
+hi Special ctermfg=3
 " SpecialChar   special character in a constant
 " Tag           you can use CTRL-] on this
 " Delimiter     character that needs attention
