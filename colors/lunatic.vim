@@ -226,3 +226,11 @@ hi link diffAdded DiffAdd
 hi link diffRemoved DiffDelete
 hi link diffLine Comment
 hi diffFile cterm=bold ctermfg=13
+
+" Mail
+hi mailQuoted1 ctermfg=3
+hi mailQuoted2 ctermfg=4
+hi mailQuoted3 ctermfg=5
+hi mailQuoted4 ctermfg=3
+hi mailQuoted5 ctermfg=4
+hi mailQuoted6 ctermfg=5
